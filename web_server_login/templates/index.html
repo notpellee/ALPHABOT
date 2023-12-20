@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='/static/style.css' />
+        <style>
+            /* Imposta la larghezza e l'altezza dei pulsanti */
+            button {
+              width: 10%;
+              height: 20%;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+    </head>
+    <body>
+        <center>
+        <h2>COMANDI ROBOT</h2><br>
+        
+        <form method="post">
+            <button type = "submit" value="AVANTI" name="AVANTI">
+                <img src = "\static\k_up.png">
+            </button><br><br>
+            <button type = "submit" value="SINISTRA" name="SINISTRA" style="margin-right: 6%;">
+                <img src = "\static\k_left.png">
+            </button>
+            <button type = "submit" value="DESTRA" name="DESTRA" style="margin-left: 6%;">
+                <img src = "\static\k_right.png">
+            </button><br><br>
+            <button type = "submit" value="INDIETRO" name="INDIETRO">
+                <img src = "\static\k_down.png">
+            </button><br><br>
+            <input type="text" id="input_command" name="input_command">
+            <input type="submit" id="invia" value="invia" name = "invia">
+        </form>
+        </center>
+    </body>
+</html>
